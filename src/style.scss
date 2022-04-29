@@ -3,61 +3,25 @@
 @use './assets/styles/functions';
 
 body {
+  background: radial-gradient(
+      circle,
+      colors.$primary-variant 0%,
+      colors.$primary 300%
+    )
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
   font-family: 'Fira Sans', sans-serif;
 }
-.header,
-.footer {
-  height: 5vh;
-}
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: colors.$primary;
-  padding-left: functions.space(4);
-  height: 80px;
-}
-.header-title {
-  color: colors.$light3;
-}
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: colors.$primary;
-  height: 90vh;
+a {
+  color: inherit;
+  font-family: titleRegular;
 }
 .container {
-  width: 100%;
+  width: 90%;
+  max-width: 1320px;
   margin-inline: auto;
-}
-.footer {
-  color: colors.$dark1;
-  text-align: center;
-}
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
 }
