@@ -1,0 +1,6 @@
+@function space($i) {
+  @return calc(#{$i} * 0.5rem);
+}
+@function fontSize($i) {
+  @return calc(#{$i} * 0.5em);
+}
