@@ -6,6 +6,7 @@ interface Cursor {
   y: number,
   element: HTMLDivElement | null
 }
+console.log(window.innerHeight)
 const cursorDot: Cursor = {
   x: 0,
   y: 0,
@@ -31,8 +32,8 @@ window.addEventListener('load', () => {
     })
 
     document.addEventListener('mousemove', (event: MouseEvent) => {
-      cursorDot.element.style.top = `${event.y}px`
-      cursorDot.element.style.left = `${event.x}px`
+      cursorDot.element.style.top = `${event.pageY}px`
+      cursorDot.element.style.left = `${event.pageX}px`
     })
   } else {
     document.documentElement.style.cursor = 'default';

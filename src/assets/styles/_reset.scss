@@ -9,12 +9,10 @@ html,
 body {
   height: 100%;
 }
-
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-
 img,
 picture,
 video,
@@ -22,15 +20,14 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  height: auto;
 }
-
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
-
 p,
 h1,
 h2,

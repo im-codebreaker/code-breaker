@@ -4,8 +4,9 @@
 @use './assets/styles/_typography';
 
 html {
-  user-select: none;
   cursor: none;
+  user-select: none;
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -31,11 +32,22 @@ a {
   color: inherit;
   font-family: titleRegular, sans-serif;
 }
+p {
+  max-width: 60ch;
+}
 .container {
   width: 90%;
-  max-width: 1320px;
+  max-width: 1536px;
   margin-inline: auto;
 }
+.section_philosophie,
+.section_strategie,
+.section_realisation,
+.section_contact {
+  margin-top: 240px;
+  scroll-margin-top: functions.space(10);
+}
+
 // -------------------------- Cursor -------------------------- //
 .cursor_dot {
   pointer-events: none;
@@ -120,11 +132,32 @@ a {
     }
   }
 }
+// -------------------------- Section Hero -------------------------- //
+.section_hero,
+.section_philosophie,
+.section_strategie,
+.section_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+.footer {
+  margin-top: functions.space(10);
+  .footer_copyright {
+    padding: functions.space(2) 0;
+    text-align: right;
+  }
+}
+@media (hover: none) {
+  .cursor_dot {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
   // -------------------------- Header -------------------------- //
   .header_navbar {
-    padding: functions.space(10);
     .header_navbar-burger {
       display: none;
     }
@@ -169,8 +202,42 @@ a {
       }
     }
   }
+  .section_hero,
+  .section_philosophie,
+  .section_strategie,
+  .section_contact {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .section_philosophie,
+  .section_strategie,
+  .section_contact {
+    align-items: flex-start;
+  }
+  // -------------------------- Section Philosophie -------------------------- //
+  .section_philosophie {
+    & article,
+    & figure {
+      max-width: 50%;
+    }
+  }
+  .section_strategie {
+    flex-direction: row-reverse;
+  }
+  // -------------------------- Section Philosophie -------------------------- //
+  .footer,
+  .footer_social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer {
+    justify-content: space-between;
+    .social_item {
+      padding-right: functions.space(10);
+    }
+  }
 }
-
 @media (min-width: 1440px) {
   // -------------------------- Header -------------------------- //
   .header_navbar {
