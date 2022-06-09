@@ -21,6 +21,7 @@
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
   </head>
   <body class="container">
     <header class="header">
@@ -54,13 +55,24 @@
           <h1>Lorem ipsum dolor sit amet</h1>
         </div>
         <div class="section_hero-video">
-          <img src="https://via.placeholder.com/640" alt="" />
+          <video
+            id="movie"
+            autoplay
+            loop
+            muted=""
+            playsinline=""
+            width="640"
+            height="auto"
+          >
+            <source src="src/assets/medias/rubiks.mp4" />
+            <!--<source src="src/assets/medias/rubiks0001-0180.webm" /> -->
+          </video>
         </div>
       </section>
       <section id="philosophie" class="section_philosophie">
         <article>
-          <header>
-            <h2>Philosophie</h2>
+          <header class="section_philosophie-header">
+            <h2><i class="ri-checkbox-blank-fill"></i><i class="line"></i>Philosophie</h2>
           </header>
           <p>
             Ma vision du web est celle d’un moyen de communication permettant à
@@ -75,13 +87,16 @@
           </p>
         </article>
         <figure>
-          <img src="https://via.placeholder.com/640" alt="" />
+          <img
+            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/rocket.png"
+            alt=""
+          />
         </figure>
       </section>
       <section id="strategie" class="section_strategie">
         <article>
-          <header>
-            <h2>Stratégie</h2>
+          <header class="section_strategie-header">
+            <h2><i class="ri-checkbox-blank-fill"></i><i class="line"></i>Stratégie</h2>
           </header>
           <p>
             Parce que chaque projet est unique, la stratégie doit être adaptée
@@ -104,33 +119,77 @@
             confiance et la transparence.
           </p>
         </article>
-        <figure>
-          <img src="https://via.placeholder.com/640" alt="" />
-        </figure>
+        <div class="section_strategies-images">
+          <img
+            class="strategies_images-item"
+            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/notebook.png"
+            alt=""
+          />
+          <img
+            class="strategies_images-item"
+            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/compass.png"
+            alt=""
+          />
+          <img
+            class="strategies_images-item"
+            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/calc.png"
+            alt=""
+          />
+          <img
+            class="strategies_images-item"
+            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/telescop.png"
+            alt=""
+          />
+          <img
+            class="strategies_images-item"
+            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/wacom.png"
+            alt=""
+          />
+        </div>
       </section>
       <section id="realisation" class="section_realisation">
-        <h2>Réalisation</h2>
+        <header class="section_realisation-header">
+          <h2><i class="ri-checkbox-blank-fill"></i><i class="line"></i>Réalisation</h2>
+        </header>        
         <ul class="section_realisation-list">
           <li class="realisation_list-item">
-            <img src="https://via.placeholder.com/780x440" alt="" />
+            <img
+              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/cover_naanifik.jpg"
+              alt=""
+              width="640px"
+              height="360px"
+            />
           </li>
           <li class="realisation_list-item">
-            <img src="https://via.placeholder.com/780x440" alt="" />
+            <img
+              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/cover_naanifik.jpg"
+              alt=""
+              width="640px"
+              height="360px"
+            />
           </li>
           <li class="realisation_list-item">
-            <img src="https://via.placeholder.com/780x440" alt="" />
+            <img
+              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/cover_naanifik.jpg"
+              alt=""
+              width="640px"
+              height="360px"
+            />
           </li>
         </ul>
       </section>
       <section id="contact" class="section_contact">
         <article>
           <header>
-            <h2>Contact</h2>
+            <h2><i class="ri-checkbox-blank-fill"></i><i class="line"></i>Contact</h2>
           </header>
           <p> Une idée, un projet à réaliser ? </p>
         </article>
         <figure>
-          <img src="https://via.placeholder.com/640" alt="" />
+          <img
+            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/coffee.png"
+            alt=""
+          />
         </figure>
       </section>
     </main>

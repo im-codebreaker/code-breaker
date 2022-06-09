@@ -1,17 +1,26 @@
-import './style.scss'
-console.log('Hello World');
+import gsap from 'gsap';
+import './style.scss';
+
+let tl = gsap.timeline({ defaults: { ease: "power2.inOut", duration: 3.5} });
+
+tl.to('.strategies_images-item',{
+  y:0,
+  yoyo:true,
+  repeat:-1
+})
 
 interface Cursor {
   x: number,
   y: number,
   element: HTMLDivElement | null
 }
-console.log(window.innerHeight)
+
 const cursorDot: Cursor = {
   x: 0,
   y: 0,
   element: document.querySelector('.cursor_dot')
 }
+
 const burgerButton: HTMLButtonElement | null = document.querySelector('.header_navbar-burger');
 
 burgerButton?.addEventListener('click', (): void => {

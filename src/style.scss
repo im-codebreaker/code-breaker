@@ -17,13 +17,7 @@ h6 {
   font-family: contentBold, sans-serif;
 }
 body {
-  background: radial-gradient(
-      circle,
-      colors.$primary-variant 0%,
-      colors.$primary 300%
-    )
-    no-repeat center center fixed;
-  background-size: cover;
+  background: colors.$primary;
   color: colors.$light;
   overflow-x: hidden;
 }
@@ -34,6 +28,13 @@ a {
 }
 p {
   max-width: 60ch;
+
+  @media screen and (min-width: 75em) {
+    font-size:1.25rem;
+  }
+  @media screen and (min-width: 90em) {
+    font-size:1.5rem;
+  }
 }
 .container {
   width: 90%;
@@ -46,6 +47,13 @@ p {
 .section_contact {
   margin-top: 240px;
   scroll-margin-top: functions.space(10);
+}
+::-webkit-scrollbar {
+  background-color: colors.$primary-variant;
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: colors.$secondary;
 }
 
 // -------------------------- Cursor -------------------------- //
@@ -142,7 +150,11 @@ p {
   align-items: center;
   justify-content: center;
 }
-
+.section_philosophie-header,
+.section_strategie-header,
+.section_realisation-header{
+  margin-bottom: 4rem;
+}
 .footer {
   margin-top: functions.space(10);
   .footer_copyright {
@@ -154,6 +166,85 @@ p {
   .cursor_dot {
     display: none;
   }
+}
+.section_strategies-images {
+  position: relative;
+}
+.strategies_images-item:not(:first-child) {
+  position: absolute;
+  z-index: 2;
+}
+.strategies_images-item:nth-of-type(2) {
+  top: 10%;
+  right: -2%;  
+  max-width: 100px;
+  transform: translateY(10px);
+  @media screen and (min-width: 36em) {
+    max-width: 160px;
+  }
+  @media screen and (min-width: 90em) {
+    max-width: none;
+  }
+}
+.strategies_images-item:nth-of-type(3) {
+  bottom: -10%;
+  left: 10%;
+  max-width: 160px;
+  transform: translateY(30px);
+  @media screen and (min-width: 36em) {
+    max-width: 200px;
+  }
+  @media screen and (min-width: 90em) {
+    max-width: none;
+  }
+}
+.strategies_images-item:nth-of-type(4) {
+  top: calc(50% - 100px);
+  left: -5%;
+  max-width: 200px;
+  transform: translateY(-10px);
+  @media screen and (min-width: 36em) {
+    max-width: 240px;
+  }
+  @media screen and (min-width: 48em) {
+    max-width: 320px;
+  }
+  @media screen and (min-width: 90em) {
+    top: calc(50% - 200px);
+    left: -10%;
+    max-width: none;
+  }
+}
+.strategies_images-item:nth-of-type(5) {
+  top: calc(50% - 100px);
+  left: calc(50% - 50px);
+  max-width: 200px;
+  transform: translateY(-30px);
+  @media screen and (min-width: 36em) {
+    max-width: 240px;
+  }
+  @media screen and (min-width: 48em) {
+    max-width: 320px;
+  }
+  @media screen and (min-width: 90em) {
+    top: calc(50% - 200px);
+    left: calc(50% - 100px);
+    max-width: none;
+  }
+}
+.ri-checkbox-blank-fill{
+  display: inline-block;
+  font-size: .75rem;
+  transform: rotate(45deg);
+}
+.line{
+  display:inline-block;
+  width: 40px;
+  height: 2px;
+  margin-inline: 1rem;
+  vertical-align: middle;
+  border-radius: 3px;
+  background-color: colors.$light;
 }
 @media (min-width: 1024px) {
   // -------------------------- Header -------------------------- //
@@ -224,6 +315,7 @@ p {
   .section_strategie {
     flex-direction: row-reverse;
   }
+
   // -------------------------- Section Philosophie -------------------------- //
   .footer,
   .footer_social {
