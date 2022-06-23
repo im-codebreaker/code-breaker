@@ -1,0 +1,90 @@
+@charset 'utf-8';
+
+/*------------------------------------*\
+  #USE FILES
+\*------------------------------------*/
+
+@use './assets/styles/reset';
+@use './assets/styles/colors';
+@use './assets/styles/typography';
+
+/*------------------------------------*\
+  #GLOBAL
+\*------------------------------------*/
+
+html {
+  cursor: none;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: contentBold, sans-serif;
+}
+body {
+  background: colors.$primary;
+  color: colors.$light;
+  overflow-x: hidden;
+}
+a {
+  cursor: none;
+  color: inherit;
+  font-family: titleRegular, sans-serif;
+}
+p {
+  max-width: 60ch;
+
+  @media screen and (min-width: 75em) {
+    font-size: 1.25rem;
+  }
+  @media screen and (min-width: 90em) {
+    font-size: 1.5rem;
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: colors.$primary-variant;
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: colors.$secondary;
+}
+
+/*------------------------------------*\
+  #UTILS
+\*------------------------------------*/
+
+.container {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+}
+
+/*------------------------------------*\
+  #CURSOR
+\*------------------------------------*/
+
+.cursor_dot {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  background-color: colors.$secondary;
+  border-radius: 50%;
+  transition: transform 400ms ease;
+  &.enter {
+    opacity: 0.2;
+    transform: scale(4);
+    background-color: colors.$secondary-variant;
+  }
+  @media (hover: none) {
+    display: none;
+  }
+}

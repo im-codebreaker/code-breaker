@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Code Breaker - Concepteur de site web</title>
     <meta name="description" content="Concepteur de site web sur mesure" />
     <meta
@@ -13,15 +17,29 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="favicon.png" />
     <link rel="canonical" href="https://www.codebreaker.fr" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="twitter:card" content="" />
     <meta name="twitter:site" content="" />
     <meta name="twitter:creator" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <meta property="og:site_name" content="Code Breaker" />
+    <meta property="og:title" content="Concepteur de site web" />
+    <meta
+      property="og:description"
+      content="Code Breaker, concepteur de site web sur mesure."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.codebreaker.fr" />
+    <meta
+      property="og:image"
+      content="https://le-naanifik.s3.eu-west-3.amazonaws.com/og_naanifik.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Bannière avec le logo Code Breaker"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="container">
     <header class="header">
@@ -52,7 +70,8 @@
     <main class="main">
       <section class="section_hero">
         <div class="section_hero-baseline">
-          <h1>Lorem ipsum dolor sit amet</h1>
+          <h1 class="line-1"></h1>
+          <p class="subtitle">/ Briser les code du web / </p>
         </div>
         <div class="section_hero-video">
           <video
@@ -70,10 +89,11 @@
         </div>
       </section>
       <section id="philosophie" class="section_philosophie">
-        <article>
-          <header class="section_philosophie-header">
-            <h2><i class="ri-checkbox-blank-fill"></i><i class="line"></i>Philosophie</h2>
-          </header>
+        <h2
+          ><i class="ri-checkbox-blank-fill"></i
+          ><i class="line"></i>Philosophie</h2
+        >
+        <div class="section_philosophie-content">
           <p>
             Ma vision du web est celle d’un moyen de communication permettant à
             qui l’utilise de s’ouvrir en un simple click une porte virtuelle sur
@@ -85,27 +105,28 @@
             digitale capable de propulser votre vision a travers le temps et
             l’espace.
           </p>
-        </article>
-        <figure>
-          <img
-            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/rocket.png"
-            alt=""
-          />
-        </figure>
+          <picture class="philosophie_content-images">
+            <img
+              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/rocket.png"
+              alt=""
+            />
+          </picture>
+        </div>
       </section>
       <section id="strategie" class="section_strategie">
-        <article>
-          <header class="section_strategie-header">
-            <h2><i class="ri-checkbox-blank-fill"></i><i class="line"></i>Stratégie</h2>
-          </header>
+        <h2
+          ><i class="ri-checkbox-blank-fill"></i
+          ><i class="line"></i>Stratégie</h2
+        >
+        <div class="section_strategie-content">
           <p>
-            Parce que chaque projet est unique, la stratégie doit être adaptée
-            aux caractéristiques de votre projet.<br />
+            Parce que chaque projet est unique, la stratégie doit elle être
+            adaptée aux caractéristiques de votre projet.<br />
             Bien cerner la vision que vous avez de votre projet me permettra une
-            construction fluide et cohérente de ce dernier.<br />
-            Bien poser une problématique participe de moitié à résoudre le
-            problème, c’est pourquoi il est primordial de poser des bases
-            solides dès le départ. <br />
+            construction et un développement à la fois fluide et cohérent.<br />
+            Souvent on dit que bien poser une problématique participe de moitié
+            à résoudre le problème, c’est pourquoi il est primordial de poser
+            des bases solides dès le départ. <br />
             C’est sur ces bases que l’expérience digitale va se construire, elle
             doit fournir à l’utilisateur une immersion aussi simple
             qu’inoubliable. L’interface graphique quand à elle doit répondre à
@@ -118,79 +139,99 @@
             <br />L’investissement est total, la collaboration se fait dans la
             confiance et la transparence.
           </p>
-        </article>
-        <div class="section_strategies-images">
-          <img
-            class="strategies_images-item"
-            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/notebook.png"
-            alt=""
-          />
-          <img
-            class="strategies_images-item"
-            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/compass.png"
-            alt=""
-          />
-          <img
-            class="strategies_images-item"
-            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/calc.png"
-            alt=""
-          />
-          <img
-            class="strategies_images-item"
-            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/telescop.png"
-            alt=""
-          />
-          <img
-            class="strategies_images-item"
-            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/wacom.png"
-            alt=""
-          />
+          <div class="section_strategies-images">
+            <img
+              class="strategies_images-item"
+              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/notebook.png"
+              alt=""
+            />
+            <img
+              class="strategies_images-item"
+              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/compass.png"
+              alt=""
+            />
+            <img
+              class="strategies_images-item"
+              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/calc.png"
+              alt=""
+            />
+            <img
+              class="strategies_images-item"
+              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/telescop.png"
+              alt=""
+            />
+            <img
+              class="strategies_images-item"
+              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/wacom.png"
+              alt=""
+            />
+          </div>
         </div>
       </section>
       <section id="realisation" class="section_realisation">
-        <header class="section_realisation-header">
-          <h2><i class="ri-checkbox-blank-fill"></i><i class="line"></i>Réalisation</h2>
-        </header>        
+        <h2
+          ><i class="ri-checkbox-blank-fill"></i
+          ><i class="line"></i>Réalisation</h2
+        >
+
         <ul class="section_realisation-list">
           <li class="realisation_list-item">
-            <img
-              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/cover_naanifik.jpg"
-              alt=""
-              width="640px"
-              height="360px"
-            />
+            <picture class="image_box">
+              <a
+                href="https://www.lenaanifik.fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/cover_naanifik.jpg"
+                  alt="Cover du site web LeNaanifik"
+                  width="1536px"
+                  height="864px"
+                />
+              </a>
+            </picture>
           </li>
           <li class="realisation_list-item">
-            <img
-              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/cover_naanifik.jpg"
-              alt=""
-              width="640px"
-              height="360px"
-            />
+            <picture class="image_box">
+              <a
+                href="https://www.lenaanifik.fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/cover_portfolio.jpg"
+                  alt="Cover du portfolio de Bouchard Mehdi"
+                  width="1536px"
+                  height="864px"
+                />
+              </a>
+            </picture>
           </li>
-          <li class="realisation_list-item">
-            <img
-              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/cover_naanifik.jpg"
-              alt=""
-              width="640px"
-              height="360px"
-            />
+          <li class="realisation_list-item coming">
+            <h3>COMING SOON</h3>
+            <span class="subtitle">/ En cours de développement /</span>
           </li>
         </ul>
       </section>
       <section id="contact" class="section_contact">
-        <article>
-          <header>
-            <h2><i class="ri-checkbox-blank-fill"></i><i class="line"></i>Contact</h2>
-          </header>
-          <p> Une idée, un projet à réaliser ? </p>
-        </article>
-        <figure>
+        <h2
+          ><i class="ri-checkbox-blank-fill"></i><i class="line"></i>Contact</h2
+        >
+        <div class="section_contact-content">
+          <div class="content_content-glass">
+            <h3> Une idée, un projet à réaliser ? </h3>
+            <p
+              >Code Breaker vous accompagne dans la conception et le
+              développement de votre projet.<br />
+              N'hésitez pas à venir en discuter autour d'un bon café.
+            </p>
+            <a class="contact_call" href="tel:0669535614">Prendre un café</a>
+          </div>
           <img
             src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/coffee.png"
             alt=""
           />
-        </figure>
+        </div>
       </section>
     </main>
     <div class="cursor_dot"></div>

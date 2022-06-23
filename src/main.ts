@@ -1,13 +1,26 @@
 import gsap from 'gsap';
-import './style.scss';
+import { TextPlugin } from 'gsap/all';
+import './main.scss';
+import './index.scss';
 
-let tl = gsap.timeline({ defaults: { ease: "power2.inOut", duration: 3.5} });
+gsap.registerPlugin(TextPlugin);
 
-tl.to('.strategies_images-item',{
-  y:0,
-  yoyo:true,
-  repeat:-1
+let tl = gsap.timeline({ defaults: { ease: "power2.inOut", duration: 3.5 } });
+
+tl.to('.line-1', {
+  duration: 4,
+  text: {
+    value: "Code Breaker",
+    delimiter: ""
+  },
+}).to('.section_hero-baseline .subtitle', {
+  opacity: 1
 })
+  .to('.strategies_images-item', {
+    y: 0,
+    yoyo: true,
+    repeat: -1
+  })
 
 interface Cursor {
   x: number,
@@ -48,4 +61,3 @@ window.addEventListener('load', () => {
     document.documentElement.style.cursor = 'default';
   }
 })
-
