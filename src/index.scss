@@ -246,10 +246,13 @@
 .section_hero-baseline h1 {
   line-height: 1;
   font-size: clamp(2.5rem, 7vw + 2rem, 10rem);
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  transform: translateX(-50px);
 }
 .section_hero-baseline .subtitle {
-  opacity: 0;
   text-align: right;
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 /*------------------------------------*\

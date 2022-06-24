@@ -1,20 +1,17 @@
 import gsap from 'gsap';
-import { TextPlugin } from 'gsap/all';
 import './main.scss';
 import './index.scss';
 
-gsap.registerPlugin(TextPlugin);
-
 let tl = gsap.timeline({ defaults: { ease: "power2.inOut", duration: 3.5 } });
 
-tl.to('.line-1', {
-  duration: 4,
-  text: {
-    value: "Code Breaker",
-    delimiter: ""
-  },
+tl.to('.section_hero-baseline h1', {
+  duration: 2,
+  x: 0,
+  'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+
 }).to('.section_hero-baseline .subtitle', {
-  opacity: 1
+  opacity: 1,
+  y: 0
 })
   .to('.strategies_images-item', {
     y: 0,
