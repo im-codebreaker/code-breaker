@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  #USE FILES
+\*------------------------------------*/
+
+@use './assets/styles/variables';
+
+/*------------------------------------*\
+  #NOT FOUND
+\*------------------------------------*/
+
+.notfound {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  height: 100%;
+
+  @media screen and (min-width: 64em) {
+    flex-direction: row;
+  }
+}
+.notfound_content p {
+  margin: 2rem 0;
+}

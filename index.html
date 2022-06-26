@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<html lang="fr" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -17,9 +17,6 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="favicon.png" />
     <link rel="canonical" href="https://www.codebreaker.fr" />
-    <meta name="twitter:card" content="" />
-    <meta name="twitter:site" content="" />
-    <meta name="twitter:creator" content="" />
     <meta property="og:site_name" content="Code Breaker" />
     <meta property="og:title" content="Concepteur de site web" />
     <meta
@@ -30,7 +27,7 @@
     <meta property="og:url" content="https://www.codebreaker.fr" />
     <meta
       property="og:image"
-      content="https://le-naanifik.s3.eu-west-3.amazonaws.com/og_naanifik.jpg"
+      content="https://imcodebreaker.s3.eu-west-3.amazonaws.com/og_codebreaker.jpg"
     />
     <meta
       property="og:image:alt"
@@ -43,7 +40,7 @@
   </head>
   <body class="container">
     <header class="header">
-      <nav class="header_navbar" role="navigation">
+      <nav class="header_navbar">
         <a class="header_navbar-logo" href="/"> Code Breaker _</a>
         <button class="header_navbar-burger" aria-label="toggle navigation">
           <span class="icon-bar"></span>
@@ -51,7 +48,9 @@
           <span class="icon-bar"></span>
         </button>
         <ul class="header_navbar-menu">
-          <h2 class="navbar_menu-title">Menu</h2>
+          <li>
+            <h2 class="navbar_menu-title">Menu</h2>
+          </li>
           <li class="navbar_menu-item">
             <a class="menu_item-link" href="#philosophie">Philosophie</a>
           </li>
@@ -81,10 +80,14 @@
             muted=""
             playsinline=""
             width="640"
-            height="auto"
+            height="640"
           >
-            <source src="src/assets/medias/rubiks.mp4" />
-            <!--<source src="src/assets/medias/rubiks0001-0180.webm" /> -->
+            <source
+              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/rubiks.mp4"
+            />
+            <source
+              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/rubiks.webm"
+            />
           </video>
         </div>
       </section>
@@ -106,9 +109,18 @@
             l’espace.
           </p>
           <picture class="philosophie_content-images">
+            <source
+              srcset="
+                https://imcodebreaker.s3.eu-west-3.amazonaws.com/rocket.webp
+              "
+              type="image/webp"
+            />
             <img
               src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/rocket.png"
-              alt=""
+              alt="Lune avec fusée en 3D"
+              loading="lazy"
+              width="640"
+              height="640"
             />
           </picture>
         </div>
@@ -140,31 +152,78 @@
             confiance et la transparence.
           </p>
           <div class="section_strategies-images">
-            <img
-              class="strategies_images-item"
-              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/notebook.png"
-              alt=""
-            />
-            <img
-              class="strategies_images-item"
-              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/compass.png"
-              alt=""
-            />
-            <img
-              class="strategies_images-item"
-              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/calc.png"
-              alt=""
-            />
-            <img
-              class="strategies_images-item"
-              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/telescop.png"
-              alt=""
-            />
-            <img
-              class="strategies_images-item"
-              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/wacom.png"
-              alt=""
-            />
+            <picture class="strategies_images-item notebook">
+              <source
+                srcset="
+                  https://imcodebreaker.s3.eu-west-3.amazonaws.com/notebook.webp
+                "
+                type="image/webp"
+              />
+              <img
+                src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/notebook.png"
+                alt="Carnet de note en 3D"
+                loading="lazy"
+                width="640"
+                height="640"
+              />
+            </picture>
+            <picture class="strategies_images-item compass">
+              <source
+                srcset="
+                  https://imcodebreaker.s3.eu-west-3.amazonaws.com/compass.webp
+                "
+                type="image/webp"
+              />
+              <img
+                src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/compass.png"
+                alt="Boussole noire et rose en 3D"
+                loading="lazy"
+                width="200"
+                height="200"
+              />
+            </picture>
+            <picture class="strategies_images-item calc">
+              <source
+                srcset="
+                  https://imcodebreaker.s3.eu-west-3.amazonaws.com/calc.webp
+                "
+                type="image/webp"
+              />
+              <img
+                src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/calc.png"
+                alt="Calculette noire et rose en 3D"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+            </picture>
+            <picture class="strategies_images-item telescop">
+              <source
+                srcset="
+                  https://imcodebreaker.s3.eu-west-3.amazonaws.com/telescop.webp
+                "
+                type="image/webp"
+              />
+              <img
+                src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/telescop.png"
+                alt="Telescope noir et rose en 3D"
+              />
+            </picture>
+            <picture class="strategies_images-item wacom">
+              <source
+                srcset="
+                  https://imcodebreaker.s3.eu-west-3.amazonaws.com/wacom.webp
+                "
+                type="image/webp"
+              />
+              <img
+                src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/wacom.png"
+                alt="Stylet wacom noir et rose en 3D"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -176,36 +235,51 @@
 
         <ul class="section_realisation-list">
           <li class="realisation_list-item">
-            <picture class="image_box">
-              <a
-                href="https://www.lenaanifik.fr"
-                target="_blank"
-                rel="noreferrer"
-              >
+            <a
+              href="https://www.lenaanifik.fr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <picture class="image_box">
+                <source
+                  srcset="
+                    https://imcodebreaker.s3.eu-west-3.amazonaws.com/cover_naanifik.webp
+                  "
+                  type="image/webp"
+                />
+
                 <img
                   src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/cover_naanifik.jpg"
                   alt="Cover du site web LeNaanifik"
-                  width="1536px"
-                  height="864px"
+                  loading="lazy"
+                  width="1536"
+                  height="864"
                 />
-              </a>
-            </picture>
+              </picture>
+            </a>
           </li>
           <li class="realisation_list-item">
-            <picture class="image_box">
-              <a
-                href="https://www.lenaanifik.fr"
-                target="_blank"
-                rel="noreferrer"
-              >
+            <a
+              href="https://porfolio-pi-bice.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <picture class="image_box">
+                <source
+                  srcset="
+                    https://imcodebreaker.s3.eu-west-3.amazonaws.com/cover_portfolio.webp
+                  "
+                  type="image/webp"
+                />
                 <img
                   src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/cover_portfolio.jpg"
                   alt="Cover du portfolio de Bouchard Mehdi"
-                  width="1536px"
-                  height="864px"
+                  loading="lazy"
+                  width="1536"
+                  height="864"
                 />
-              </a>
-            </picture>
+              </picture>
+            </a>
           </li>
           <li class="realisation_list-item coming">
             <h3>COMING SOON</h3>
@@ -225,12 +299,23 @@
               développement de votre projet.<br />
               N'hésitez pas à venir en discuter autour d'un bon café.
             </p>
-            <a class="contact_call" href="tel:0669535614">Prendre un café</a>
+            <a class="button" href="tel:0669535614">Prendre un café</a>
           </div>
-          <img
-            src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/coffee.png"
-            alt=""
-          />
+          <picture>
+            <source
+              srcset="
+                https://imcodebreaker.s3.eu-west-3.amazonaws.com/coffee.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://imcodebreaker.s3.eu-west-3.amazonaws.com/coffee.png"
+              alt="Gobelet de café noir et rose en 3D"
+              loading="lazy"
+              width="640"
+              height="640"
+            />
+          </picture>
         </div>
       </section>
     </main>
@@ -238,13 +323,23 @@
     <footer class="footer">
       <ul class="footer_social">
         <li class="social_item">
-          <a href="">Mail _</a>
+          <a href="mailto:contact@codebreaker.fr">Mail _</a>
         </li>
         <li class="social_item">
-          <a href="">Facebook _</a>
+          <a
+            href="https://www.facebook.com/imcodeBreaker"
+            target="_blank"
+            rel="noreferrer"
+            >Facebook _</a
+          >
         </li>
         <li class="social_item">
-          <a href="">Instagram _</a>
+          <a
+            href="https://twitter.com/ImCodebreaker"
+            target="_blank"
+            rel="noreferrer"
+            >Instagram _</a
+          >
         </li>
       </ul>
       <p class="footer_copyright">Tous droits réservés 2022 ©️ Code Breaker</p>
